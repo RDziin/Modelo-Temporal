@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Modelo Temporal</title>
+</head>
+
+<body>
+    <header>
+        <p>
+            Qual o diferencial do <strong>Modelo <br>Temporal</strong>
+            em um Banco de Dados?
+        </p>
+        <div class="boxData">
+            DATABASE
+        </div>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1 class="titulo">Modelo Temporal</h1>
+            <h3>
+                O banco de dados temporal possui relação
+                com o tempo, ou seja, diferente dos bancos de
+                dados relacionais atuais, que apenas
+                armazenam informações do estado presente
+                do registro, o banco de dados temporal
+                armazena as informações dos estados
+                passados, presente e futuros de um registro.
+            </h3>
+            <p>Para ter melhor compreensão sobre o modelo temporal precisamos
+                ver o seguintes aspectos, que caracterizam um banco de dados
+                temporal:</p>
+            <ul>
+                <li>
+                    <h1>Tipos de tempo;</h1>
+                </li>
+                <li>
+                    <h1>Ordem do tempo;</h1>
+                </li>
+                <li>
+                    <h1>Rótulos temporais.</h1>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="type">
+            <hr>
+            <h5>TIPOS DE TEMPO: </h5>
+            <ul>
+                <li>
+                    <p><b>01 Tempo Instantâneo -</b> Tempo bastante comum nos banco de
+                        dados atuais, que apenas armazena o dado no momento atual.
+                    </p>
+                </li>
+                <li>
+                    <p><b>02 Tempo de Transação -</b> Tempo em um dado é definido no
+                        banco de dados a partir de uma transação.
+                    </p>
+                </li>
+                <li>
+                    <p><b>03 Tempo de Validade -</b> Tempo em que um dado é validado no
+                        mundo real.</p>
+                </li>
+                <li>
+                    <p><b>04 Tempo Bitemporal - </b>Tempo formado pelo conjunto do tempo
+                        de transação e do tempo de validade.
+                    </p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="order">
+            <h5>ORDEM DE TEMPO: </h5>
+            <ul>
+                <li>
+                    <p><b>01 Ordem Linear</b><br>Forma mais utilizada para ordenação temporal, um dado possui no
+                        máximo um sucessor e um antecessor.</p>
+                </li>
+                <hr>
+                <li>
+                    <p><b>02 Ordem Ramificada</b><br>Um dado pode ter mais de um sucessor e antecessor.</p>
+                </li>
+                <hr>
+                <li>
+                    <p><b>03 Ordem Circular</b><br>Um conjuntos é repetido periodicamente em uma certa ordem.
+                    </p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+
+        <div class="label">
+            <h5>RÓTULOS TEMPORAIS</h5>
+            <ul>
+                <li>
+                    <p><b>01 Instante</b><br>Ele está relacionado a ocorrência de algum evento, ele é
+                        representado por um ponto específico numa linha de tempo</p>
+                </li>
+                <hr>
+                <li>
+                    <p><b>02 Intervalo</b><br>É um tempo decorrido entre dois instantes de tempos diferentes e
+                        conhecidos.</p>
+                </li>
+                <hr>
+                <li>
+                    <p><b>03 Elemento Temporal</b><br>É a união finita de intervalos, útil para a modelagem de uma fato que
+                        pode apresentar os mesmo valores em períodos diferentes.
+                    </p>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>VAMOS PARTICIPAR?</h1>
+            <h4>MODELO TEMPORAL </h4>
+        </div>
+
+        <div class="example">
+            <header>
+                <h5>CENÁRIO</h5>
+            </header>
+            <div class="textBox">
+                <p>Suponha que você seja o gestor de RH de uma
+                    organização e tenha a responsabilidade de manter um
+                    registro dos vencimentos dos colaboradores. Sempre que
+                    um salário for modificado, é necessário não só documentar
+                    o novo valor, mas também assegurar que os registros
+                    anteriores sejam mantidos para consultas posteriores.</p>
+            </div>
+            <div class="textBox2">
+                <h1>FUNCIONÁRIO: Jonathas da Silva</h1>
+                <ul>
+                    <li>
+                        <h3>Janeiro de 2023:</h3>
+                        <p><span>Salário de Jonathas: </span>R$ 2.000,00
+                            Da Silva começou a trabalhar em 1º de janeiro de 2023. O salário
+                            dele é R$ 2.000,00 e é válido a partir dessa data.</p>
+                    </li>
+                    <li>
+                        <h3>Julho de 2023:</h3>
+                        <p><span>Aumento de Salário:</span>R$ 2.500,00
+                            Em 1º de julho de 2023, Jonathas recebe um aumento, e seu novo
+                            salário passa a ser R$ 2.500,00. Esse aumento é registrado como
+                            válido a partir dessa data.</p>
+                    </li>
+                    <li>
+                        <h3>Agosto de 2023:
+                        </h3>
+                        <p><span>Correção de Erro:</span>Salário ajustado para R$ 2.200,00
+                            Em agosto, percebe-se que o aumento de julho foi maior do que o
+                            planejado. O salário de Jonathas deveria ter sido ajustado para R$
+                            2.200,00, e não R$ 2.500,00. Então, é feita uma correção retroativa
+                            para 1º de julho de 2023</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="final">
+            <header>
+                <h5>COMO ISSO É ÚTIL?</h5>
+            </header>
+            <ul>
+                <li>
+                    <h2>Consultas Históricas: </h2>
+                    <p>Se você precisar saber quanto
+                        Jonathas Da Silva ganhava em maio de 2023, você
+                        verá que o salário era de R$ 2.000,00. Se precisar
+                        saber o salário em agosto de 2023, verá que é R$
+                        2.200,00.</p>
+                </li>
+                <li>
+                    <h2>Auditoria: </h2>
+                    <p>Se houver uma auditoria ou uma revisão de
+                        salários, você pode provar que o salário de R$ 2.500,00
+                        foi um erro e que foi corrigido em tempo hábil.</p>
+                </li>
+            </ul>
+            <div class="textBox">
+                <h1>Resumo</h1>
+                <p>O modelo temporal permite que você veja como os dados
+                    (neste caso, os salários de Jonathas) mudaram ao longo do
+                    tempo e lhe dá a capacidade de revisar ou consultar os
+                    dados exatamente como estavam em qualquer ponto no
+                    passado. Isso é essencial para manter a integridade e a
+                    precisão dos dados, especialmente em cenários onde as
+                    decisões podem ser impactadas por mudanças históricas.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="creators">
+            <div class="profile">
+                <a href="https://www.instagram.com/v.luiz_/" target="_blank"><img src="src/FOTOVINICIUS.png" alt=""></a>
+                <h1>Vinicius Luiz</h1>
+            </div>
+            <div class="profile">
+               <a href="https://www.instagram.com/081_.rd/" target="_blank"><img src="src/FOTORD.png" alt=""></a> 
+                <h1>Rhodrigo Leandro</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
