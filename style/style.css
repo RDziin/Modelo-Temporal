@@ -214,6 +214,7 @@ p {
   border: 3px solid white;
   height: 1100px;
   padding: 0;
+  text-align: center;
 }
 
 .example header {
@@ -239,6 +240,7 @@ p {
   height: 850px;
   padding: 0;
   margin-bottom: 120px;
+  text-align: center;
 }
 
 .final header {
@@ -356,6 +358,7 @@ p {
     gap: 50px;
     width: 100%;
     padding: 0 20px;
+    align-items: center;
   }
 
   b {
@@ -455,7 +458,7 @@ p {
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
     width: 100%;
     position: relative;
-    top: -5%;
+    top: -3%;
     height: 100px;
   }
 
