@@ -144,26 +144,24 @@ main {
   gap: 60px;
   overflow: hidden;
 }
-.type {
-  gap: 60px;
-  background: linear-gradient(200deg, #f7470b 10%, #f814a2 110%);
-}
 
-.type p {
-  width: 700px;
-  font-size: 22px;
-}
-.type hr {
-  width: 100%;
-}
-.order hr {
-  position: relative;
-  width: 320px;
+.type {
+  background: linear-gradient(200deg, #f7470b 10%, #f814a2 110%);
+  height: 850px;
 }
 
 .order {
   background: linear-gradient(300deg, #f7470b 10%, #f814a2 110%);
 }
+
+.label {
+  background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
+}
+
+hr {
+  width: 600px;
+}
+
 
 h5 {
   position: relative;
@@ -183,21 +181,11 @@ ul {
 b {
   font-size: 30px;
 }
+
 p {
   font-size: 22px;
   line-height: 30px;
   width: 900px;
-}
-
-.label {
-  overflow: hidden;
-  background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
-  border-radius: 12px;
-}
-
-.label hr {
-  position: relative;
-  width: 600px;
 }
 
 .box {
@@ -230,7 +218,7 @@ p {
   text-align: center;
 }
 
-.example h3 {
+h3 {
   font-size: 24px;
   color: #f543ec;
 }
@@ -250,36 +238,44 @@ p {
   top: 0;
   height: 100px;
 }
-
-@media (max-width: 1350px) {
+.final h3{
+  color: white;
+}
+@media (max-width: 750px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-
   }
 
   header p {
-    font-size: 30px;
+    font-size: 28px;
     width: 100%;
     text-align: center;
   }
 
   .boxData {
-    padding: 20px 400px;
+    padding: 20px 120px;
   }
 
   .titulo {
     position: relative;
-    width: px;
+    width: 247px;
+    height: 200px;
     align-items: center;
-    left: -35%;
+    left: -20%;
     font-size: 30px;
   }
 
-  .intro, .type, .order, .label, .box, .example, .final {
-    width: 1000px;
+  .intro,
+  .type,
+  .order,
+  .label,
+  .box,
+  .example,
+  .final {
+    width: 400px;
     padding: 0 10px;
     box-sizing: border-box;
     overflow: hidden;
@@ -293,20 +289,22 @@ p {
 
   .intro {
     gap: 30px;
-    height: 600px;
+    height: 850px;
   }
 
   .intro h3 {
     color: #f7534d;
     border: 1px solid white;
     border-radius: 12px;
-    width: 900px;
-    font-size: 22px;
+    width: 400px;
+    font-size: 20px;
     text-align: center;
   }
 
   .intro p {
-    font-size: 22px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
   }
 
   .intro ul {
@@ -315,28 +313,18 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 22px;
+    font-size: 16px;
     position: relative;
   }
 
   .type {
-    height: 700px;
+    height: 1100px;
     background: linear-gradient(200deg, #f7470b 10%, #f814a2 110%);
     border-radius: 12px;
   }
 
-  .type hr {
-    width: 100%;
-    position: relative;
-    top: 0;
-  }
-  .order hr {
-    position: relative;
-    width: 320px;
-  }
-
   .order {
-    height: 700px;
+    height: 850px;
     overflow: hidden;
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 110%);
     border-radius: 12px;
@@ -344,10 +332,10 @@ p {
 
   h5 {
     position: relative;
-    width: 250px;
-    font-size: 40px;
+    width: 400px;
+    font-size: 34px;
     text-shadow: 1px 3px 6px white;
-    left: -35%;
+    left: 0;
   }
 
   ul {
@@ -362,29 +350,27 @@ p {
   }
 
   b {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   p {
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
-    width: 80%;
+    width: 100%;
     padding: 0 20px;
   }
 
   .label {
-    gap: 60px;
-    height: 750px;
+    height: 1000px;
     overflow: hidden;
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     border-radius: 12px;
   }
 
-
-  .label hr {
-    position: relative;
-    width: 600px;
+  hr {
+    width: 100%;
+    filter: opacity(50%);
   }
 
   .box {
@@ -406,8 +392,9 @@ p {
 
   .example {
     border: 3px solid white;
-    height: 1100px;
+    height: 1690px;
     padding: 0;
+    gap: 20px;
   }
 
   .example header {
@@ -417,15 +404,18 @@ p {
     top: -5%;
   }
 
-  .textBox p {
+  .textBox{
     width: 100%;
-    text-align: right;
+    text-align: center;
     font-size: 22px;
     padding: 0 20px;
     position: relative;
-    top: 2%;
+    top: -2%;
   }
-
+  .textBox2{
+    position: relative;
+    top: -2%;
+  }
   .textBox2 h1 {
     font-size: 30px;
     text-align: center;
@@ -439,7 +429,8 @@ p {
     font-size: 25px;
     color: #f543ec;
   }
-  .example p, .final p {
+  .example p,
+  .final p {
     font-size: 22px;
     text-align: center;
     padding: 0 20px;
@@ -449,7 +440,7 @@ p {
   .final {
     padding: 0;
     border: 3px solid white;
-    height: 850px;
+    height: 1300px;
     margin-bottom: 150px;
     gap: 60px;
   }
@@ -462,9 +453,9 @@ p {
     height: 100px;
   }
 
-.final h3{
-  color: white;
-}
+  .final h3 {
+    color: white;
+  }
   .creators {
     width: 500px;
     display: flex;
