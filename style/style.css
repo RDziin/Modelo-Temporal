@@ -241,7 +241,7 @@ h3 {
 .final h3{
   color: white;
 }
-@media (max-width: 750px) {
+@media (max-width: 1334px) {
   html{
     min-width: 100%;
     max-width: 100%;
