@@ -241,18 +241,19 @@ h3 {
 .final h3{
   color: white;
 }
+
 @media (max-width: 1334px) {
-  html{
-    min-width: 100vw;
-    max-width: 100vw;
+  html {
+    width: 100vw;
+    overflow-x: hidden;
   }
-  
+
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   header p {
@@ -262,16 +263,19 @@ h3 {
   }
 
   .boxData {
-    padding: 20px 120px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
   }
 
   .titulo {
-    position: relative;
-    width: 247px;
+    width: 100%;
+    max-width: 400px;
     height: 200px;
     align-items: center;
-    left: -20%;
     font-size: 30px;
+    margin: 0 auto;
   }
 
   .intro,
@@ -281,16 +285,15 @@ h3 {
   .box,
   .example,
   .final {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 0 10px;
     box-sizing: border-box;
-    overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
 
   .intro {
@@ -302,9 +305,8 @@ h3 {
     color: #f7534d;
     border: 1px solid white;
     border-radius: 12px;
-    width: 400px;
+    width: 100%;
     font-size: 20px;
-    text-align: center;
   }
 
   .intro p {
@@ -315,12 +317,10 @@ h3 {
 
   .intro ul {
     list-style: circle;
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 16px;
-    position: relative;
   }
 
   .type {
@@ -331,17 +331,15 @@ h3 {
 
   .order {
     height: 850px;
-    overflow: hidden;
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 110%);
     border-radius: 12px;
   }
 
   h5 {
-    position: relative;
-    width: 400px;
+    width: 100%;
     font-size: 34px;
     text-shadow: 1px 3px 6px white;
-    left: 0;
+    margin: 0 auto;
   }
 
   ul {
@@ -350,9 +348,7 @@ h3 {
     flex-direction: column;
     text-align: center;
     gap: 50px;
-    width: 100%;
     padding: 0 20px;
-    align-items: center;
   }
 
   b {
@@ -360,16 +356,13 @@ h3 {
   }
 
   p {
-    width: 100%;
     font-size: 18px;
     text-align: left;
-    width: 100%;
     padding: 0 20px;
   }
 
   .label {
     height: 1000px;
-    overflow: hidden;
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     border-radius: 12px;
   }
@@ -382,7 +375,6 @@ h3 {
   .box {
     height: 200px;
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,22 +398,19 @@ h3 {
   .example header {
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     width: 100%;
-    position: relative;
-    top: -2%;
   }
 
-  .textBox{
+  .textBox {
     width: 100%;
     text-align: center;
     font-size: 22px;
     padding: 0 20px;
-    position: relative;
-    top: -2%;
   }
-  .textBox2{
-    position: relative;
-    top: -2%;
+
+  .textBox2 {
+    width: 100%;
   }
+
   .textBox2 h1 {
     font-size: 30px;
     text-align: center;
@@ -435,6 +424,7 @@ h3 {
     font-size: 25px;
     color: #f543ec;
   }
+
   .example p,
   .final p {
     font-size: 22px;
@@ -447,29 +437,30 @@ h3 {
     padding: 0;
     border: 3px solid white;
     height: 1300px;
-    margin-bottom: 150px;
     gap: 60px;
   }
 
   .final header {
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
     width: 100%;
-    position: relative;
-    top: -3%;
     height: 100px;
   }
 
   .final h3 {
     color: white;
   }
+
   .creators {
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 200px;
   }
+
   .profile {
     height: 50px;
   }
 }
+
