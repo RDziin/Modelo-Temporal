@@ -249,13 +249,15 @@ p {
   height: 100px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1350px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+
   }
+
   header p {
     font-size: 30px;
     width: 100%;
@@ -263,49 +265,46 @@ p {
   }
 
   .boxData {
-    padding: 20px 20px;
-    width: 100%;
+    padding: 20px 400px;
   }
 
   .titulo {
     position: relative;
-    width: 300px;
+    width: px;
     align-items: center;
-    left: -17%;
+    left: -35%;
     font-size: 30px;
   }
 
   .intro, .type, .order, .label, .box, .example, .final {
-    width: 100%;
-    padding: 10px;
+    width: 1000px;
+    padding: 0 10px;
     box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
 
   .intro {
     gap: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 760px;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+    height: 600px;
   }
 
   .intro h3 {
-    margin-top: 20px;
     color: #f7534d;
     border: 1px solid white;
     border-radius: 12px;
-    padding: 30px;
-    width: 100%;
+    width: 900px;
     font-size: 22px;
     text-align: center;
   }
 
   .intro p {
     font-size: 22px;
-    width: 100%;
   }
 
   .intro ul {
@@ -319,23 +318,15 @@ p {
   }
 
   .type {
-    gap: 60px;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 780px;
-    padding: 20px;
-    align-items: center;
+    height: 700px;
     background: linear-gradient(200deg, #f7470b 10%, #f814a2 110%);
     border-radius: 12px;
   }
 
-  .type p {
-    width: 100%;
-    font-size: 22px;
-  }
   .type hr {
     width: 100%;
+    position: relative;
+    top: 0;
   }
   .order hr {
     position: relative;
@@ -343,61 +334,50 @@ p {
   }
 
   .order {
-    gap: 60px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    width: 500px;
-    height: 780px;
+    height: 700px;
     overflow: hidden;
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 110%);
     border-radius: 12px;
   }
+
   h5 {
     position: relative;
-    left: -30%;
     width: 250px;
     font-size: 40px;
     text-shadow: 1px 3px 6px white;
-    left: -20%;
+    left: -35%;
   }
 
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 50px;
+    width: 100%;
+    padding: 0 20px;
   }
 
   b {
     font-size: 30px;
   }
+
   p {
-    font-size: 22px;
-    line-height: 30px;
     width: 100%;
+    font-size: 22px;
+    text-align: left;
+    width: 80%;
+    padding: 0 20px;
   }
 
   .label {
     gap: 60px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 780px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    width: 500px;
+    height: 750px;
     overflow: hidden;
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     border-radius: 12px;
   }
 
-  .label ul {
-    width: 100%;
-  }
 
   .label hr {
     position: relative;
@@ -405,7 +385,6 @@ p {
   }
 
   .box {
-    width: 500px;
     height: 200px;
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
     text-align: center;
@@ -423,68 +402,51 @@ p {
   }
 
   .example {
-    padding: 0;
-    width: 500px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
     border: 3px solid white;
-    height: 1380px;
-    margin-bottom: 20px;
+    height: 1100px;
+    padding: 0;
   }
 
   .example header {
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     width: 100%;
     position: relative;
-    top: 0;
+    top: -5%;
   }
 
   .textBox p {
     width: 100%;
-    text-align: center;
+    text-align: right;
     font-size: 22px;
     padding: 0 20px;
     position: relative;
-    top: -20%;
+    top: 2%;
   }
 
   .textBox2 h1 {
     font-size: 30px;
+    text-align: center;
   }
 
   .example h1 {
     padding: 30px;
   }
 
-  .example h3 {
+  h3 {
     font-size: 25px;
     color: #f543ec;
   }
-  .example p {
+  .example p, .final p {
     font-size: 22px;
     text-align: center;
     padding: 0 20px;
+    width: 100%;
   }
 
   .final {
     padding: 0;
-    width: 500px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
     border: 3px solid white;
-    height: 1100px;
+    height: 850px;
     margin-bottom: 150px;
     gap: 60px;
   }
@@ -493,25 +455,13 @@ p {
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
     width: 100%;
     position: relative;
-    top: -3%;
+    top: -5%;
     height: 100px;
   }
-  .final ul {
-    width: 100%;
-    text-align: center;
-    padding: 0 20px;
-    position: relative;
-    top: -2%;
-  }
-  .final h1 {
-    position: relative;
-    top: -2%;
-  }
-  .final .textBox p {
-    position: relative;
-    top: 2%;
-  }
 
+.final h3{
+  color: white;
+}
   .creators {
     width: 500px;
     display: flex;
