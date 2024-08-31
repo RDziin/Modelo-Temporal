@@ -276,6 +276,7 @@ h3 {
     align-items: center;
     font-size: 30px;
     margin: 0 auto;
+    left: 0;
   }
 
   .intro,
@@ -336,10 +337,10 @@ h3 {
   }
 
   h5 {
-    width: 100%;
+    width: 200px;
     font-size: 34px;
     text-shadow: 1px 3px 6px white;
-    margin: 0 auto;
+    left: 0;
   }
 
   ul {
@@ -348,7 +349,6 @@ h3 {
     flex-direction: column;
     text-align: center;
     gap: 50px;
-    padding: 0 20px;
   }
 
   b {
@@ -359,6 +359,7 @@ h3 {
     font-size: 18px;
     text-align: left;
     padding: 0 20px;
+    width: 350px;
   }
 
   .label {
@@ -368,7 +369,7 @@ h3 {
   }
 
   hr {
-    width: 100%;
+    width: 60%;
     filter: opacity(50%);
   }
 
@@ -398,6 +399,7 @@ h3 {
   .example header {
     background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
     width: 100%;
+    top: -5%;
   }
 
   .textBox {
@@ -444,6 +446,7 @@ h3 {
     background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
     width: 100%;
     height: 100px;
+    top: -2.5%;
   }
 
   .final h3 {
