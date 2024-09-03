@@ -260,7 +260,7 @@ h3 {
     font-size: 28px;
     width: 488px;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   .boxData {
@@ -439,6 +439,229 @@ h3 {
     padding: 0;
     border: 3px solid white;
     height: 1300px;
+    gap: 60px;
+  }
+
+  .final header {
+    background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
+    width: 100%;
+    height: 100px;
+    top: -2.5%;
+  }
+
+  .final h3 {
+    color: white;
+  }
+
+  .creators {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  .profile {
+    height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header p {
+    font-size: 26px;
+    width: 400px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .boxData {
+    width: 350px;
+  }
+
+  .titulo {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    align-items: center;
+    font-size: 30px;
+    left: 0;
+    top: 0;
+  }
+
+  .intro,
+  .type,
+  .order,
+  .label,
+  .box,
+  .example,
+  .final {
+    width: 100%;
+    max-width: 350px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro {
+    height: 850px;
+  }
+
+  .intro h3 {
+    color: #f7534d;
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .intro p {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro ul {
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .type {
+    height: 1100px;
+    background: linear-gradient(200deg, #f7470b 10%, #f814a2 110%);
+    border-radius: 12px;
+  }
+
+  .order {
+    height: 850px;
+    background: linear-gradient(300deg, #f7470b 10%, #f814a2 110%);
+    border-radius: 12px;
+  }
+
+  h5 {
+    width: 200px;
+    font-size: 34px;
+    text-shadow: 1px 3px 6px white;
+    left: 0;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  b {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 20px;
+    width: 350px;
+  }
+
+  .label {
+    height: 1000px;
+    background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
+    border-radius: 12px;
+  }
+
+  hr {
+    width: 100%;
+    filter: opacity(50%);
+  }
+
+  .box {
+    height: 200px;
+    background: linear-gradient(300deg, #f7470b 10%, #f814a2 120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 12px;
+  }
+
+  .box h1 {
+    font-size: 40px;
+    text-shadow: 1px 3px 6px white;
+  }
+
+  .example {
+    border: 3px solid white;
+    height: 1700px;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .example header {
+    background: linear-gradient(150deg, #6d1ec4 10%, #f543ec 50%, #6d1ec4 100%);
+    width: 100%;
+    top: -2%;
+  }
+
+  .textBox {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .textBox2 {
+    width: 100%;
+  }
+
+  .textBox2 h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .example h1 {
+    padding: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #f543ec;
+  }
+
+  .example p,
+  .final p {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .final {
+    padding: 0;
+    border: 3px solid white;
+    height: 1350px;
     gap: 60px;
   }
 
